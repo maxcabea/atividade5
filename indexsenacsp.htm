@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac São Paulo</title>
+    <style>
+        body {
+            margin-top: 50px;
+            background-color: black;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: white;
+            width: 100%;
+            margin: auto;
+
+        }
+
+        .cabecalho {
+            display: flex;
+            text-align: center;
+            color: white;
+            background-color: rgb(47, 108, 174);
+            padding: 50px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-start;
+            background-color: rgb(44, 50, 56);
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+        }
+
+        .menu a:hover {
+            background-color: black;
+            transform: 0.2s;
+        }
+
+        .corpo {
+            display: flex;
+        }
+
+        .conteudo {
+            flex: 30%;
+            padding: 15px;
+            background-color: rgb(241, 241, 241);
+        }
+
+        .conteudo img {
+            max-width: 100%;
+        }
+
+        .lateral {
+            flex: 70%;
+            padding: 20px;
+        }
+
+        .lateral b {
+            font-size: 13px;
+        }
+
+        .lateral img {
+            max-width: 100%;
+        }
+
+        .rodape {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(221, 221, 221);
+            padding: 20px;
+            color: black;
+        }
+
+        @media screen and (max-width: 650px) {
+            .container {
+                width: 100%;
+            }
+
+            .menu {
+                flex-direction: column;
+            }
+
+            .menu a {
+                text-align: center;
+            }
+
+            .corpo {
+                flex-direction: column;
+            }
+            .conteudo img{
+                flex-direction: column;
+            }
+            .lateral img{
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 430px) {
+            .cabecalho {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <h1>Senac São Paulo</h1>
+            <p>Desenvolvimento de layout com <b>flex</b> layout</p>
+        </div>
+        <div class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Loja</a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre</a>
+        </div>
+        <div class="corpo">
+            <div class="conteudo">
+                <h2>O Senac</h2>
+                <img src="imagens/foto1.png" alt="Imagem Senac">
+                <p>Um texto aleatório qualquer.</p>
+            </div>
+            <div class="lateral">
+                <h2>TITULO DA POSTAGEM</h2>
+                <p><b>Maxwell Lopes, Mar 22, 2032</b></p>
+                <img src="imagens/foto2.png" alt="Imagem Senac">
+                <p>Um texto lorem ipsum qualquer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus iste recusandae aliquam laboriosam
+                    accusantium minima ab inventore autem rerum asperiores esse sed error, iure, rem omnis similique!
+                    Culpa, sunt temporibus.</p>
+            </div>
+        </div>
+        <div class="rodape">
+            <h2>&copy; Senac - 2032</h2>
+        </div>
+    </div>
+</body>
+
+</html>
